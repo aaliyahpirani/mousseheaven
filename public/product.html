@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop — Mousse Heaven</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="shop">
+    <a class="skip" href="#product">Skip to content</a>
+    <header class="site-header">
+      <nav class="nav">
+        <a class="logo" href="index.html">Mousse Heaven</a>
+        <ul>
+          <li><a href="index.html#pastries">Shop</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <li>
+            <button class="bag-link" type="button" data-open-bag>
+              Bag <span class="bag-count" data-bag-count>0</span>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="product" class="pdp">
+      <p class="crumbs">
+        <a href="index.html">Home</a> /
+        <a href="index.html#pastries">Shop</a> /
+        <span data-crumb-cat></span> /
+        <span data-crumb-name></span>
+      </p>
+
+      <div class="gallery">
+        <div class="thumbs" data-thumbs></div>
+        <figure class="zoom-stage">
+          <img data-main-img src="images/dessert-1.svg" alt="" />
+          <p class="zoom-hint">Hover to zoom · click to enlarge</p>
+        </figure>
+      </div>
+
+      <div class="pdp-info">
+        <h1 data-title>Pastry</h1>
+        <p class="pdp-price" data-price>$0</p>
+        <form class="buy-form">
+          <p class="pdp-label" data-option-label>Size</p>
+          <div class="size-row" data-options></div>
+          <p class="pdp-label">Quantity</p>
+          <div class="qty-row">
+            <button type="button" data-qty-minus>−</button>
+            <span data-qty>1</span>
+            <button type="button" data-qty-plus>+</button>
+          </div>
+          <button class="add-bag" type="submit">Add to bag</button>
+        </form>
+        <div class="pdp-copy">
+          <p data-blurb></p>
+          <p class="allergens" data-allergens></p>
+        </div>
+      </div>
+    </main>
+
+    <section class="also">
+      <h2>You may also like</h2>
+      <div class="also-grid" data-also></div>
+    </section>
+
+    <footer class="band-beige">
+      <p>Mousse Heaven</p>
+    </footer>
+    <script src="catalog.js"></script>
+    <script src="motion.js"></script>
+    <script src="shop.js"></script>
+  </body>
+</html>

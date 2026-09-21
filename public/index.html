@@ -33,8 +33,8 @@
       </figure>
       <h1>Mousse Heaven</h1>
       <p class="lede">
-        Soft cakes that still hold a clean slice. Start on this home page —
-        cocoa, matcha, and berry each get their own site later.
+        Soft cakes that still hold a clean slice. Shop mousse cakes, sheet
+        cakes, and mixed assortments from this page.
       </p>
     </section>
 
@@ -82,21 +82,21 @@
             <img src="images/dessert-1.svg" alt="Cocoa mousse cake" />
             <p class="allergens">Contains milk, egg, gluten, soy</p>
             <p>70% chocolate, espresso dust, a thin sable base.</p>
-            <a class="arrow" href="#" aria-label="Open cocoa mousse cake page">→</a>
+            <a class="arrow" href="product.html?id=cocoa-mousse" aria-label="Open cocoa mousse cake page">→</a>
           </article>
           <article class="seller">
             <h3>Raspberry mousse cake</h3>
             <img src="images/dessert-3.svg" alt="Raspberry mousse cake" />
             <p class="allergens">Contains milk, egg, gluten</p>
             <p>Sharp fruit, vanilla bean, a ribbon of jam in the middle.</p>
-            <a class="arrow" href="#" aria-label="Open raspberry mousse cake page">→</a>
+            <a class="arrow" href="product.html?id=raspberry-mousse" aria-label="Open raspberry mousse cake page">→</a>
           </article>
           <article class="seller">
             <h3>Matcha mousse cake</h3>
             <img src="images/dessert-2.svg" alt="Matcha mousse cake" />
             <p class="allergens">Contains milk, egg, sesame, soy</p>
             <p>Stone-ground tea, white chocolate, toasted sesame.</p>
-            <a class="arrow" href="#" aria-label="Open matcha mousse cake page">→</a>
+            <a class="arrow" href="product.html?id=matcha-mousse" aria-label="Open matcha mousse cake page">→</a>
           </article>
         </div>
       </section>
@@ -104,36 +104,86 @@
       <section id="pastries" class="band band-beige pastries">
         <div class="pastries-head">
           <span class="pink-orb" aria-hidden="true"></span>
-          <p class="section-sub">Each cake type will get its own site</p>
+          <p class="section-sub">Shop a cake the way you would a favorite coat</p>
           <h2 class="section-title">Our pastries</h2>
         </div>
-        <article class="pastry-row">
-          <img src="images/dessert-1.svg" alt="Cocoa mousse cake" />
-          <div class="pastry-copy">
-            <h3>Cocoa mousse cake</h3>
-            <p class="sizes">6" · 8" · 10"</p>
-            <p>Dark chocolate mousse on a sable crust. Served cold.</p>
+        <div class="pastry-group" id="mousse">
+          <h3 class="pastry-group-title">Mousse cake</h3>
+          <div class="pastry-grid">
+            <a class="pastry-card" href="product.html?id=cocoa-mousse">
+              <img src="images/dessert-1.svg" alt="" />
+              <h4>Cocoa mousse cake</h4>
+              <p>Placeholder · from $38</p>
+            </a>
+            <a class="pastry-card" href="product.html?id=raspberry-mousse">
+              <img src="images/dessert-3.svg" alt="" />
+              <h4>Raspberry mousse cake</h4>
+              <p>Placeholder · from $40</p>
+            </a>
+            <a class="pastry-card" href="product.html?id=matcha-mousse">
+              <img src="images/dessert-2.svg" alt="" />
+              <h4>Matcha mousse cake</h4>
+              <p>Placeholder · from $42</p>
+            </a>
+            <a class="pastry-card" href="product.html?id=vanilla-mousse">
+              <img src="images/about.svg" alt="" />
+              <h4>Vanilla bean mousse cake</h4>
+              <p>Placeholder · from $36</p>
+            </a>
           </div>
-          <a class="pill" href="#">See the cake</a>
-        </article>
-        <article class="pastry-row">
-          <img src="images/dessert-2.svg" alt="Matcha mousse cake" />
-          <div class="pastry-copy">
-            <h3>Matcha mousse cake</h3>
-            <p class="sizes">6" · 8"</p>
-            <p>Stone-ground tea folded into white chocolate mousse.</p>
+        </div>
+
+        <div class="pastry-group" id="sheet">
+          <h3 class="pastry-group-title">Sheet cake</h3>
+          <div class="pastry-grid">
+            <a class="pastry-card" href="product.html?id=birthday-sheet">
+              <img src="images/dessert-2.svg" alt="" />
+              <h4>Birthday sheet cake</h4>
+              <p>Placeholder · from $42</p>
+            </a>
+            <a class="pastry-card" href="product.html?id=chocolate-sheet">
+              <img src="images/dessert-1.svg" alt="" />
+              <h4>Chocolate sheet cake</h4>
+              <p>Placeholder · from $44</p>
+            </a>
+            <a class="pastry-card" href="product.html?id=lemon-sheet">
+              <img src="images/dessert-3.svg" alt="" />
+              <h4>Lemon sheet cake</h4>
+              <p>Placeholder · from $40</p>
+            </a>
+            <a class="pastry-card" href="product.html?id=carrot-sheet">
+              <img src="images/contact.svg" alt="" />
+              <h4>Carrot sheet cake</h4>
+              <p>Placeholder · from $42</p>
+            </a>
           </div>
-          <a class="pill" href="#">See the cake</a>
-        </article>
-        <article class="pastry-row">
-          <img src="images/dessert-3.svg" alt="Yuzu mousse cake" />
-          <div class="pastry-copy">
-            <h3>Yuzu mousse cake</h3>
-            <p class="sizes">6" · 8" · 10"</p>
-            <p>Citrus curd under a pale mousse, bitter-almond crumb.</p>
+        </div>
+
+        <div class="pastry-group" id="assortment">
+          <h3 class="pastry-group-title">Assortment</h3>
+          <div class="pastry-grid">
+            <a class="pastry-card" href="product.html?id=mousse-cups">
+              <img src="images/dessert-3.svg" alt="" />
+              <h4>Mini mousse cups</h4>
+              <p>Placeholder · from $36</p>
+            </a>
+            <a class="pastry-card" href="product.html?id=bite-squares">
+              <img src="images/dessert-1.svg" alt="" />
+              <h4>Bite-size squares</h4>
+              <p>Placeholder · from $32</p>
+            </a>
+            <a class="pastry-card" href="product.html?id=tartlets">
+              <img src="images/dessert-2.svg" alt="" />
+              <h4>Mixed tartlets</h4>
+              <p>Placeholder · from $38</p>
+            </a>
+            <a class="pastry-card" href="product.html?id=cookie-cake-box">
+              <img src="images/about.svg" alt="" />
+              <h4>Cookie and cake box</h4>
+              <p>Placeholder · from $34</p>
+            </a>
           </div>
-          <a class="pill" href="#">See the cake</a>
-        </article>
+        </div>
       </section>
 
       <section id="contact" class="band band-brown contact">
@@ -170,6 +220,7 @@
     <footer class="band-beige">
       <p>Mousse Heaven</p>
     </footer>
+    <script src="motion.js"></script>
     <script src="site.js"></script>
   </body>
 </html>

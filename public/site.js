@@ -22,3 +22,31 @@ if (form) {
     }
   });
 }
+
+const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+if (!reduceMotion) {
+  const reveal = new IntersectionObserver(
+    (entries) => {
+      for (const entry of entries) {
+        entry.target.classList.toggle("is-in", entry.isIntersecting);
+      }
+    },
+    { threshold: 0.18, rootMargin: "0px 0px -8% 0px" }
+  );
+
+  document
+    .querySelectorAll(".stats, .about-row, .seller, .pastries-head, .contact-copy")
+    .forEach((el, i) => {
+      el.classList.add("js-reveal");
+      el.style.transitionDelay = `${Math.min(i, 4) * 0.06}s`;
+      reveal.observe(el);
+    });
+
+  document.querySelectorAll(".pastry-group").forEach((group) => {
+    group.querySelectorAll(".pastry-card").forEach((el, i) => {
+      el.classList.add("js-reveal");
+      el.style.transitionDelay = `${(i % 4) * 0.08}s`;
+      reveal.observe(el);
+    });
+  });
+}

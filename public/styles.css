@@ -506,8 +506,26 @@ footer {
   }
 
   .nav {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.55rem;
+    padding: 0.55rem 0.9rem;
+    font-size: 0.72rem;
+  }
+
+  .logo {
+    font-size: 0.78rem;
+    flex-shrink: 0;
+  }
+
+  .nav ul {
+    gap: 0.45rem;
+    flex-wrap: nowrap;
+  }
+
+  .nav ul a {
+    font-size: 0.68rem;
+    white-space: nowrap;
   }
 
   .hero,

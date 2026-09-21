@@ -7,36 +7,169 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
-      <p class="eyebrow">One-page site</p>
-      <h1>Mousse Heaven</h1>
-      <p class="lede">
-        A single HTML file, a stylesheet, and a tiny Node server. That is enough
-        for a whole website page.
-      </p>
+    <a class="skip" href="#home">Skip to content</a>
+
+    <header class="site-header">
+      <nav class="nav">
+        <a class="logo" href="#home">Mousse Heaven</a>
+        <ul>
+          <li><a href="#about">About us</a></li>
+          <li><a href="#bestsellers">Best sellers</a></li>
+          <li><a href="#pastries">Our pastries</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
+    <section id="home" class="hero band-brown">
+      <figure class="photo photo-1">
+        <img src="images/dessert-1.svg" alt="Dessert photo placeholder 1" />
+      </figure>
+      <figure class="photo photo-2">
+        <img src="images/dessert-2.svg" alt="Dessert photo placeholder 2" />
+      </figure>
+      <figure class="photo photo-3">
+        <img src="images/dessert-3.svg" alt="Dessert photo placeholder 3" />
+      </figure>
+      <h1>Mousse Heaven</h1>
+      <p class="lede">
+        Soft cakes that still hold a clean slice. Start on this home page —
+        cocoa, matcha, and berry each get their own site later.
+      </p>
+    </section>
+
     <main>
-      <section>
-        <h2>What this page is made of</h2>
-        <ul>
-          <li><strong>HTML</strong> — the structure: headings, text, links.</li>
-          <li><strong>CSS</strong> — the look: colors, spacing, fonts.</li>
-          <li><strong>Node.js</strong> — serves these files at localhost.</li>
+      <section id="about" class="band band-beige">
+        <ul class="stats">
+          <li>
+            <strong>100%</strong>
+            <span>customer satisfaction</span>
+          </li>
+          <li>
+            <strong>48 hr</strong>
+            <span>freshness guarantee</span>
+          </li>
+          <li>
+            <strong>Hand-folded</strong>
+            <span>every single batch</span>
+          </li>
         </ul>
+        <div class="about-row">
+          <img
+            class="about-photo"
+            src="images/about.svg"
+            alt="Portrait placeholder for About us"
+          />
+          <div class="about-copy">
+            <p class="section-sub">A note from the kitchen</p>
+            <h2 class="section-title">About us</h2>
+            <p>
+              Mousse Heaven started as late-night trays of chocolate that never
+              quite set like a bakery cake — they stayed airy, cold, and soft.
+              I still fold every batch by hand, then chill overnight so each
+              slice holds.
+            </p>
+          </div>
+        </div>
       </section>
 
-      <section>
-        <h2>Try it</h2>
-        <p>
-          In the project folder, run <code>npm start</code>, then open
-          <a href="/">this same page</a> in your browser.
-        </p>
+      <section id="bestsellers" class="band band-brown">
+        <p class="section-sub">The slices people ask for twice</p>
+        <h2 class="section-title">Best sellers</h2>
+        <div class="seller-grid">
+          <article class="seller">
+            <h3>Cocoa mousse cake</h3>
+            <img src="images/dessert-1.svg" alt="Cocoa mousse cake" />
+            <p class="allergens">Contains milk, egg, gluten, soy</p>
+            <p>70% chocolate, espresso dust, a thin sable base.</p>
+            <a class="arrow" href="#" aria-label="Open cocoa mousse cake page">→</a>
+          </article>
+          <article class="seller">
+            <h3>Raspberry mousse cake</h3>
+            <img src="images/dessert-3.svg" alt="Raspberry mousse cake" />
+            <p class="allergens">Contains milk, egg, gluten</p>
+            <p>Sharp fruit, vanilla bean, a ribbon of jam in the middle.</p>
+            <a class="arrow" href="#" aria-label="Open raspberry mousse cake page">→</a>
+          </article>
+          <article class="seller">
+            <h3>Matcha mousse cake</h3>
+            <img src="images/dessert-2.svg" alt="Matcha mousse cake" />
+            <p class="allergens">Contains milk, egg, sesame, soy</p>
+            <p>Stone-ground tea, white chocolate, toasted sesame.</p>
+            <a class="arrow" href="#" aria-label="Open matcha mousse cake page">→</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="pastries" class="band band-beige pastries">
+        <div class="pastries-head">
+          <span class="pink-orb" aria-hidden="true"></span>
+          <p class="section-sub">Each cake type will get its own site</p>
+          <h2 class="section-title">Our pastries</h2>
+        </div>
+        <article class="pastry-row">
+          <img src="images/dessert-1.svg" alt="Cocoa mousse cake" />
+          <div class="pastry-copy">
+            <h3>Cocoa mousse cake</h3>
+            <p class="sizes">6" · 8" · 10"</p>
+            <p>Dark chocolate mousse on a sable crust. Served cold.</p>
+          </div>
+          <a class="pill" href="#">See the cake</a>
+        </article>
+        <article class="pastry-row">
+          <img src="images/dessert-2.svg" alt="Matcha mousse cake" />
+          <div class="pastry-copy">
+            <h3>Matcha mousse cake</h3>
+            <p class="sizes">6" · 8"</p>
+            <p>Stone-ground tea folded into white chocolate mousse.</p>
+          </div>
+          <a class="pill" href="#">See the cake</a>
+        </article>
+        <article class="pastry-row">
+          <img src="images/dessert-3.svg" alt="Yuzu mousse cake" />
+          <div class="pastry-copy">
+            <h3>Yuzu mousse cake</h3>
+            <p class="sizes">6" · 8" · 10"</p>
+            <p>Citrus curd under a pale mousse, bitter-almond crumb.</p>
+          </div>
+          <a class="pill" href="#">See the cake</a>
+        </article>
+      </section>
+
+      <section id="contact" class="band band-brown contact">
+        <div class="contact-copy">
+          <p class="section-sub">A note from the kitchen, or an order</p>
+          <h2 class="section-title">Contact</h2>
+          <form class="contact-form" action="#" method="post">
+            <label>
+              Name
+              <input type="text" name="name" autocomplete="name" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" autocomplete="email" required />
+            </label>
+            <label>
+              Question
+              <textarea name="question" rows="5" required></textarea>
+            </label>
+            <button type="submit">Send</button>
+            <p class="form-note" hidden>Thanks — I will write back soon.</p>
+          </form>
+        </div>
+        <div class="contact-photo-wrap">
+          <img
+            class="contact-photo"
+            src="images/contact.svg"
+            alt="Contact photo placeholder"
+          />
+        </div>
       </section>
     </main>
 
-    <footer>
-      <p>Built as a first page for mousseheaven.</p>
+    <footer class="band-beige">
+      <p>Mousse Heaven</p>
     </footer>
+    <script src="site.js"></script>
   </body>
 </html>

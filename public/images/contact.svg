@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 640" role="img" aria-label="Contact photo placeholder">
+  <rect width="480" height="640" fill="#f4c9d6"/>
+  <ellipse cx="240" cy="280" rx="140" ry="110" fill="#f5f0e6"/>
+  <ellipse cx="240" cy="250" rx="90" ry="40" fill="#f28ca0"/>
+  <text x="240" y="580" text-anchor="middle" fill="#3e2723" font-size="22" font-family="Georgia, serif">Contact photo</text>
+</svg>

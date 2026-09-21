@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 260" role="img" aria-label="Dessert placeholder">
+  <rect width="220" height="260" fill="#f28ca0"/>
+  <ellipse cx="110" cy="150" rx="70" ry="48" fill="#f5f0e6"/>
+  <ellipse cx="110" cy="118" rx="62" ry="28" fill="#f4c9d6"/>
+  <rect x="78" y="168" width="64" height="18" rx="4" fill="#3e2723"/>
+  <text x="110" y="236" text-anchor="middle" fill="#3e2723" font-size="14" font-family="Georgia, serif">Dessert 1</text>
+</svg>

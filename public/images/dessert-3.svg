@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 230" role="img" aria-label="Dessert placeholder">
+  <rect width="200" height="230" fill="#f5f0e6"/>
+  <path d="M40 150 Q100 40 160 150 Z" fill="#f28ca0"/>
+  <ellipse cx="100" cy="150" rx="62" ry="18" fill="#3e2723"/>
+  <text x="100" y="206" text-anchor="middle" fill="#3e2723" font-size="13" font-family="Georgia, serif">Dessert 3</text>
+</svg>
